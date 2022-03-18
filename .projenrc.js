@@ -3,10 +3,22 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   cdkVersion: '2.1.0',
   defaultReleaseBranch: 'main',
   name: 'projen-cdk-tutorial-part-3',
+  description: 'This package is for Projen Demo',
 
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],             /* Build dependencies for this module. */
-  // packageName: undefined,  /* The "name" in package.json. */
+  deps: [
+    'aymanzahranpackage',
+  ],
+
+  // Add License
+  licensed: true,
+  license: 'Apache-2.0',
+
+  // Add gitpod.yml
+  gitpod: true,
+
 });
 project.synth();
+
+project.gitpod.addDockerImage({
+  dockerFile: '.gitpod.Dockerfile',
+});
