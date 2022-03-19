@@ -147,7 +147,7 @@ EcsStack.line('desiredCount: 3,');
 EcsStack.line('maxAzs: 3,');
 EcsStack.line('cpu: 512,');
 EcsStack.line('memoryLimitMiB: 1024,');
-EcsStack.line('dockerDirAsset: \'./dockerfiles\',');
+EcsStack.line('dockerDirAsset: \'../../../src/dockerfiles\',');
 EcsStack.line('dockerFileAsset: \'MyImage.Dockerfile\',');
 EcsStack.close('});');
 EcsStack.close('}');
