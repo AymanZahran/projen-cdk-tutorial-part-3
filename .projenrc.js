@@ -49,7 +49,7 @@ project.gitpod.addCustomTask({
 
 project.gitpod.addCustomTask({
   name: 'CdkBootstrap',
-  command: 'if [[ "$ENABLE_CDK_BOOTSTRAP" == TRUE ]]; then cdk bootstrap aws://$AWS_ACCOUNT_NUMBER/$AWS_DEFAULT_REGION; fi',
+  command: 'if [[ "$ENABLE_CDK_BOOTSTRAP" == TRUE ]]; then npx cdk bootstrap aws://$AWS_ACCOUNT_NUMBER/$AWS_DEFAULT_REGION; fi',
 });
 
 project.gitpod.addVscodeExtensions(
@@ -137,14 +137,18 @@ PipelineStage.close('}');
 const EcsStack = ts('src/ecs_stack.ts');
 EcsStack.line('import { Stack, StackProps } from \'aws-cdk-lib\';');
 EcsStack.line('import { Construct } from \'constructs\';');
-EcsStack.line('import { MyEcsConstruct } from \'ecs-package\'');
+EcsStack.line('import { MyEcsConstruct } from \'ecs-package\';');
 
 EcsStack.open('export class EcsStack extends Stack {');
 EcsStack.open('constructor(scope: Construct, id: string, props: StackProps = {}) {');
 EcsStack.line('super(scope, id, props);');
 EcsStack.open('new MyEcsConstruct(this, \'MyCluster\', {');
-EcsStack.line('numberOfAzs: 3,');
-EcsStack.line('dockerfileAsset: \'./dockerfiles/MyImage.Dockerfile\'');
+EcsStack.line('desiredCount: 3,');
+EcsStack.line('maxAzs: 3,');
+EcsStack.line('cpu: 512,');
+EcsStack.line('memoryLimitMiB: 1024,');
+EcsStack.line('dockerDirAsset: \'./dockerfiles\',');
+EcsStack.line('dockerFileAsset: \'MyImage.Dockerfile\',');
 EcsStack.close('});');
 EcsStack.close('}');
 EcsStack.close('}');
