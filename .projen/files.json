@@ -20,7 +20,7 @@
     "src/main.ts",
     "src/pipeline_stack.ts",
     "src/pipeline_stage.ts",
-    "test/hello.test.ts",
+    "test/main.test.ts",
     "tsconfig.dev.json",
     "tsconfig.json"
   ],

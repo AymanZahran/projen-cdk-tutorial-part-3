@@ -6,7 +6,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   description: 'This package is for Projen Demo',
 
   deps: [
-    'ecs-package',
+    'ecs-package@^0.0.6',
   ],
 
   // Add License
@@ -19,7 +19,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
 });
 
 project.gitpod.addDockerImage({
-  image: 'jsii/superchain:1-buster-slim-node14'
+  image: 'jsii/superchain:1-buster-slim-node14',
 });
 
 project.gitpod.addCustomTask({
@@ -159,7 +159,7 @@ DockerAsset.line('FROM nginx:latest');
 
 // Dummy Test
 const DummyTest = 'DummyTest';
-const Test = ts('test/hello.test.ts');
+const Test = ts('test/main.test.ts');
 
 Test.open(`test('${ DummyTest }', () => {`);
 Test.line('expect(true).toBe(true);');

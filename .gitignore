@@ -55,5 +55,5 @@ junit.xml
 !/src/pipeline_stage.ts
 !/src/ecs_stack.ts
 !/src/dockerfiles/MyImage.Dockerfile
-!/test/hello.test.ts
+!/test/main.test.ts
 !/.github/workflows/upgrade.yml

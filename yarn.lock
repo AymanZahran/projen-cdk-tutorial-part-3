@@ -1643,10 +1643,10 @@ duplexer3@^0.1.4:
   resolved "https://registry.npmjs.org/duplexer3/-/duplexer3-0.1.4.tgz"
   integrity sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
 
-ecs-package@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/ecs-package/-/ecs-package-0.0.2.tgz#e0e5889a77f38ea0d3ced3b39cab231fdd7e7418"
-  integrity sha512-rLUmlvYSoF81LLIySHt06a3odnggHYkYTA1vMfFW9yCoHrjbvGy2zC2deqIkGtPfYVeeldsR5Gz7QsLIYiCgxw==
+ecs-package@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/ecs-package/-/ecs-package-0.0.6.tgz#b11bc0c908d240fd5e2a77ff2437f40a455df504"
+  integrity sha512-Z4gjdlYe9gdw48Lvxa7hrxp83V0lcS7HbbD9JkRl2eEHxtIUUDa5HMyUze0OTJfWY/XgaVk4jEVoPvO5cnYe+Q==
 
 electron-to-chromium@^1.4.84:
   version "1.4.88"
