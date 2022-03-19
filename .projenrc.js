@@ -19,12 +19,12 @@ const project = new awscdk.AwsCdkTypeScriptApp({
 });
 
 project.gitpod.addDockerImage({
-  image: "jsii/superchain:1-buster-slim-node14"
+  image: 'jsii/superchain:1-buster-slim-node14'
 });
 
 project.gitpod.addCustomTask({
-  name: "InstallProjen",
-  command: `sudo npm install -g projen && echo 'alias pj="npx projen"' >> ~/.bashrc && projen completion >> ~/.bashrc`,
+  name: 'ConfigAlias',
+  command: 'echo \'alias pj="npx projen"\' >> ~/.bashrc && echo \'alias cdk="npx cdk"\' >> ~/.bashrc',
 });
 
 project.gitpod.addCustomTask({
@@ -39,12 +39,12 @@ project.gitpod.addCustomTask({
 
 project.gitpod.addCustomTask({
   name: "ConfigAwsConfig",
-  command: `echo "[gitpod]" >> ~/.aws/config && echo "region = $AWS_DEFAULT_REGION" >> ~/.aws/config && echo "cli_auto_prompt = on-partial" >> ~/.aws/config`,
+  command: `echo "[default]" >> ~/.aws/config && echo "region = $AWS_DEFAULT_REGION" >> ~/.aws/config && echo "cli_auto_prompt = on-partial" >> ~/.aws/config`,
 });
 
 project.gitpod.addCustomTask({
   name: "ConfigAwsCredentials",
-  command: `echo "[gitpod]" >> ~/.aws/credentials && echo "aws_access_key_id = $AWS_ACCESS_KEY_ID" >> ~/.aws/credentials && echo "aws_secret_access_key = $AWS_SECRET_ACCESS_KEY" >> ~/.aws/credentials`,
+  command: `echo "[default]" >> ~/.aws/credentials && echo "aws_access_key_id = $AWS_ACCESS_KEY_ID" >> ~/.aws/credentials && echo "aws_secret_access_key = $AWS_SECRET_ACCESS_KEY" >> ~/.aws/credentials`,
 });
 
 project.gitpod.addCustomTask({
