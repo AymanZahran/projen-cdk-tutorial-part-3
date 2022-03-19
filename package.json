@@ -1,5 +1,5 @@
 {
-  "name": "projen-cdk-tutorial-part-3",
+  "name": "projen-cdk-tutorial-part-2",
   "description": "This package is for Projen Demo",
   "scripts": {
     "build": "npx projen build",
@@ -48,8 +48,8 @@
   },
   "dependencies": {
     "aws-cdk-lib": "^2.1.0",
-    "aymanzahranpackage": "^0.0.0",
-    "constructs": "^10.0.5"
+    "constructs": "^10.0.5",
+    "ecs-package": "^0.0.2"
   },
   "license": "Apache-2.0",
   "version": "0.0.0",

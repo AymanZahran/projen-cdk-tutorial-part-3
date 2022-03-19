@@ -86,12 +86,12 @@
       "type": "runtime"
     },
     {
-      "name": "aymanzahranpackage",
+      "name": "constructs",
+      "version": "^10.0.5",
       "type": "runtime"
     },
     {
-      "name": "constructs",
-      "version": "^10.0.5",
+      "name": "ecs-package",
       "type": "runtime"
     }
   ],
