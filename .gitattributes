@@ -18,7 +18,7 @@
 /cdk.json linguist-generated
 /LICENSE linguist-generated
 /package.json linguist-generated
-/src/dockerfiles/MyImage/Dockerfile linguist-generated
+/src/dockerfiles/MyImage.Dockerfile linguist-generated
 /src/ecs_stack.ts linguist-generated
 /src/main.ts linguist-generated
 /src/pipeline_stack.ts linguist-generated

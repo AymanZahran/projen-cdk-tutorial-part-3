@@ -15,7 +15,7 @@
     ".projen/tasks.json",
     "cdk.json",
     "LICENSE",
-    "src/dockerfiles/MyImage/Dockerfile",
+    "src/dockerfiles/MyImage.Dockerfile",
     "src/ecs_stack.ts",
     "src/main.ts",
     "src/pipeline_stack.ts",

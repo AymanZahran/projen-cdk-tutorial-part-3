@@ -2,20 +2,19 @@
 
 image: jsii/superchain:1-buster-slim-node14
 tasks:
-  - name: InstallProjen
-    command: sudo npm install -g projen && echo 'alias pj="npx projen"' >> ~/.bashrc && projen completion >> ~/.bashrc
+  - name: ConfigAlias
+    command: echo 'alias pj="npx projen"' >> ~/.bashrc && echo 'alias cdk="npx cdk"' >> ~/.bashrc
   - name: PersistEnv
     command: eval $(gp env -e)
   - name: ConfigAws
     command: mkdir ~/.aws
   - name: ConfigAwsConfig
-    command: echo "[gitpod]" >> ~/.aws/config && echo "region = $AWS_DEFAULT_REGION" >> ~/.aws/config && echo "cli_auto_prompt = on-partial" >> ~/.aws/config
+    command: echo "[default]" >> ~/.aws/config && echo "region = $AWS_DEFAULT_REGION" >> ~/.aws/config && echo "cli_auto_prompt = on-partial" >> ~/.aws/config
   - name: ConfigAwsCredentials
-    command: echo "[gitpod]" >> ~/.aws/credentials && echo "aws_access_key_id = $AWS_ACCESS_KEY_ID" >> ~/.aws/credentials && echo "aws_secret_access_key = $AWS_SECRET_ACCESS_KEY" >> ~/.aws/credentials
+    command: echo "[default]" >> ~/.aws/credentials && echo "aws_access_key_id = $AWS_ACCESS_KEY_ID" >> ~/.aws/credentials && echo "aws_secret_access_key = $AWS_SECRET_ACCESS_KEY" >> ~/.aws/credentials
   - name: CdkBootstrap
     command: if [[ "$ENABLE_CDK_BOOTSTRAP" == TRUE ]]; then cdk bootstrap aws://$AWS_ACCOUNT_NUMBER/$AWS_DEFAULT_REGION; fi
 vscode:
   extensions:
-    - dbaeumer.vscode-eslint
     - ms-azuretools.vscode-docker
     - AmazonWebServices.aws-toolkit-vscode
