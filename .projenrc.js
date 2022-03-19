@@ -19,12 +19,22 @@ const project = new awscdk.AwsCdkTypeScriptApp({
 });
 
 project.gitpod.addDockerImage({
-  dockerFile: '.gitpod.Dockerfile',
+  image: "jsii/superchain:1-buster-slim-node14"
+});
+
+project.gitpod.addCustomTask({
+  name: "InstallProjen",
+  command: `sudo npm install -g projen && echo 'alias pj="npx projen"' >> ~/.bashrc && projen completion >> ~/.bashrc`,
 });
 
 project.gitpod.addCustomTask({
   name: "PersistEnv",
   command: "eval $(gp env -e)",
+});
+
+project.gitpod.addCustomTask({
+  name: "ConfigAws",
+  command: `mkdir ~/.aws`,
 });
 
 project.gitpod.addCustomTask({
@@ -38,14 +48,15 @@ project.gitpod.addCustomTask({
 });
 
 project.gitpod.addCustomTask({
-  name: "ConfigAwsCredentials",
-  command: `echo "[gitpod]" >> ~/.aws/credentials && echo "aws_access_key_id = $AWS_ACCESS_KEY_ID" >> ~/.aws/credentials && echo "aws_secret_access_key = $AWS_SECRET_ACCESS_KEY" >> ~/.aws/credentials`,
-});
-
-project.gitpod.addCustomTask({
   name: "CdkBootstrap",
   command: `if [[ "$ENABLE_CDK_BOOTSTRAP" == TRUE ]]; then cdk bootstrap aws://$AWS_ACCOUNT_NUMBER/$AWS_DEFAULT_REGION; fi`,
 });
+
+project.gitpod.addVscodeExtensions(
+  'dbaeumer.vscode-eslint',
+  'ms-azuretools.vscode-docker',
+  'AmazonWebServices.aws-toolkit-vscode',
+);
 
 function ts(path) {
   const src = new SourceCode(project, path);
