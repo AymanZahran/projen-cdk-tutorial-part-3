@@ -13,6 +13,7 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/AymanZahran/projen-cdk-tutorial-part-3)
 [![build](https://github.com/AymanZahran/projen-cdk-tutorial-part-3/actions/workflows/build.yml/badge.svg)](https://github.com/AymanZahran/projen-cdk-tutorial-part-3/actions/workflows/build.yml)
 ## Part 3
+![projen-cdk-tutorial-part-3](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3.png)
 ## References
 - [CDK Getting Started]
 - [CDK API Reference]
