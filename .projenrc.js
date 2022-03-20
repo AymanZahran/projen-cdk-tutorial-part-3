@@ -9,6 +9,9 @@ const project = new awscdk.AwsCdkTypeScriptApp({
     'fastfargate@^0.0.7',
   ],
 
+  eslint: false,
+  mergify: false,
+
   // Add License
   licensed: true,
   license: 'Apache-2.0',

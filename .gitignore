@@ -36,7 +36,6 @@ jspm_packages/
 junit.xml
 /coverage/
 !/.github/workflows/build.yml
-!/.mergify.yml
 !/.github/pull_request_template.md
 !/test/
 !/tsconfig.json
@@ -44,7 +43,6 @@ junit.xml
 !/src/
 /lib
 /dist/
-!/.eslintrc.json
 /assets/
 !/cdk.json
 /cdk.out/

@@ -112,15 +112,6 @@
         }
       ]
     },
-    "eslint": {
-      "name": "eslint",
-      "description": "Runs eslint against the codebase",
-      "steps": [
-        {
-          "exec": "eslint --ext .ts,.tsx --fix --no-error-on-unmatched-pattern src test build-tools .projenrc.js"
-        }
-      ]
-    },
     "package": {
       "name": "package",
       "description": "Creates the distribution package"
@@ -166,9 +157,6 @@
       "steps": [
         {
           "exec": "jest --passWithNoTests --all --updateSnapshot"
-        },
-        {
-          "spawn": "eslint"
         }
       ]
     },
@@ -216,7 +204,7 @@
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser aws-cdk esbuild eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint jest jest-junit json-schema npm-check-updates ts-jest ts-node typescript aws-cdk-lib constructs fastfargate"
+          "exec": "yarn upgrade @types/jest @types/node aws-cdk esbuild jest jest-junit npm-check-updates ts-jest ts-node typescript aws-cdk-lib constructs fastfargate"
         },
         {
           "exec": "npx projen"
