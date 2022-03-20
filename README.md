@@ -17,26 +17,33 @@
 [![build](https://github.com/AymanZahran/projen-cdk-tutorial-part-3/actions/workflows/build.yml/badge.svg)](https://github.com/AymanZahran/projen-cdk-tutorial-part-3/actions/workflows/build.yml)
 ## Part 3
 ![projen-cdk-tutorial-part-3](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3.png)
+
+## License
+The [Apache-2.0] license
+
 ## References
 - [CDK Getting Started]
 - [CDK API Reference]
 - [CDK Workshop]
 - [CDK Patterns]
 - [CDK Construct Hub]
+- [AWS Solutions Constructs]
 - [Projen]
 - [Projen API Reference]
 - [Projen AWS CDK Construct Library]
 - [Projen AWS CDK Applications]
 - [Publish CDK Constructs]
 
-[CDK Construct Library]: https://github.com/AymanZahran/projen-cdk-tutorial-part-1
+[CDK Construct Library]: https://github.com/AymanZahran/projen-cdk-tutorial-part-3
 [CDK App]: https://github.com/AymanZahran/projen-cdk-tutorial-part-2
 [CDK Pipelines App]: https://github.com/AymanZahran/projen-cdk-tutorial-part-3
+[Apache-2.0]: https://github.com/AymanZahran/projen-cdk-tutorial-part-1/blob/master/LICENSE
 [CDK Getting Started]: https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html
 [CDK API Reference]: https://docs.aws.amazon.com/cdk/api/v2/
 [CDK Workshop]: https://cdkworkshop.com/
 [CDK Patterns]: https://cdkpatterns.com/
 [CDK Construct Hub]: https://constructs.dev/
+[AWS Solutions Constructs]: https://docs.aws.amazon.com/solutions/latest/constructs/welcome.html
 [Projen]: https://github.com/projen/projen
 [Projen API Reference]: https://projen.io/api/API.html
 [Projen AWS CDK Construct Library]: https://projen.io/awscdk-construct.html
