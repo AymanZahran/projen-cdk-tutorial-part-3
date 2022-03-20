@@ -13,12 +13,6 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/AymanZahran/projen-cdk-tutorial-part-3)
 [![build](https://github.com/AymanZahran/projen-cdk-tutorial-part-3/actions/workflows/build.yml/badge.svg)](https://github.com/AymanZahran/projen-cdk-tutorial-part-3/actions/workflows/build.yml)
 
-
-[![npm](https://img.shields.io/npm/v/projen-statemachine-example)](https://www.npmjs.com/package/projen-statemachine-example) 
-[![pypi](https://img.shields.io/pypi/v/scotthsieh_projen_statemachine)](https://pypi.org/project/scotthsieh-projen-statemachine/) 
-[![Maven](https://img.shields.io/maven-central/v/io.github.hsiehshujeng/projen-statemachine)](https://search.maven.org/artifact/io.github.hsiehshujeng/projen-statemachine) 
-[![nuget](https://img.shields.io/nuget/v/Projen.Statemachine)](https://www.nuget.org/packages/Projen.Statemachine/)  
-
 [CDK Construct Library]: https://github.com/AymanZahran/projen-cdk-tutorial-part-1
 [CDK App]: https://github.com/AymanZahran/projen-cdk-tutorial-part-2
 [CDK Pipelines App]: https://github.com/AymanZahran/projen-cdk-tutorial-part-3
