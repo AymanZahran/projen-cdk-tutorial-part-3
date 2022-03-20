@@ -49,7 +49,7 @@
   "dependencies": {
     "aws-cdk-lib": "^2.1.0",
     "constructs": "^10.0.5",
-    "ecs-package": "^0.0.6"
+    "fastfargate": "^0.0.7"
   },
   "license": "Apache-2.0",
   "version": "0.0.0",

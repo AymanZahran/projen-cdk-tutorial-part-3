@@ -12,8 +12,6 @@ tasks:
     command: echo "[default]" >> ~/.aws/config && echo "region = $AWS_DEFAULT_REGION" >> ~/.aws/config && echo "cli_auto_prompt = on-partial" >> ~/.aws/config
   - name: ConfigAwsCredentials
     command: echo "[default]" >> ~/.aws/credentials && echo "aws_access_key_id = $AWS_ACCESS_KEY_ID" >> ~/.aws/credentials && echo "aws_secret_access_key = $AWS_SECRET_ACCESS_KEY" >> ~/.aws/credentials
-  - name: CdkBootstrap
-    command: if [[ "$ENABLE_CDK_BOOTSTRAP" == TRUE ]]; then npx cdk bootstrap aws://$AWS_ACCOUNT_NUMBER/$AWS_DEFAULT_REGION; fi
 vscode:
   extensions:
     - ms-azuretools.vscode-docker
