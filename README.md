@@ -24,7 +24,6 @@
 - AWS_DEFAULT_REGION: Account Default Region
 - AWS_ACCESS_KEY_ID: Account Access Key
 - AWS_SECRET_ACCESS_KEY: Account Secret Key
-- ENABLE_CDK_BOOTSTRAP: Enable CDK Bootstraping in Gitpod Bootstrapping (TRUE/FALSE)
 
 ## References
 - [CDK Getting Started]
