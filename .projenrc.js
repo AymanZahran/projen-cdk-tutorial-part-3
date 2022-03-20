@@ -9,16 +9,16 @@ const project = new awscdk.AwsCdkTypeScriptApp({
     'fastfargate@^0.0.7',
   ],
 
-  eslint: false,
-  mergify: false,
-
-  // Add License
+  // Add License, Gitpod, Eslint, Mergify
   licensed: true,
   license: 'Apache-2.0',
-
-  // Add gitpod.yml
   gitpod: true,
+  eslint: false,
+  mergify: true,
 
+  // Build Trigger
+  buildWorkflow: true,
+  buildWorkflowTriggers: { pullRequest: {}, push: {} },
 });
 
 project.gitpod.addDockerImage({
