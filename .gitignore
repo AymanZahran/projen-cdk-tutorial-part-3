@@ -54,4 +54,5 @@ junit.xml
 !/src/ecs_stack.ts
 !/src/dockerfiles/MyImage.Dockerfile
 !/test/main.test.ts
+!/./README.md
 !/.github/workflows/upgrade.yml

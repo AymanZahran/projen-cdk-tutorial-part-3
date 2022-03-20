@@ -12,19 +12,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/AymanZahran/projen-cdk-tutorial-part-3)
 [![build](https://github.com/AymanZahran/projen-cdk-tutorial-part-3/actions/workflows/build.yml/badge.svg)](https://github.com/AymanZahran/projen-cdk-tutorial-part-3/actions/workflows/build.yml)
-
-[CDK Construct Library]: https://github.com/AymanZahran/projen-cdk-tutorial-part-1
-[CDK App]: https://github.com/AymanZahran/projen-cdk-tutorial-part-2
-[CDK Pipelines App]: https://github.com/AymanZahran/projen-cdk-tutorial-part-3
-
 ## Part 3
-
-## Gitpod Variables
-- AWS_ACCOUNT_NUMBER: Account Number
-- AWS_DEFAULT_REGION: Account Default Region
-- AWS_ACCESS_KEY_ID: Account Access Key
-- AWS_SECRET_ACCESS_KEY: Account Secret Key
-
 ## References
 - [CDK Getting Started]
 - [CDK API Reference]
@@ -37,6 +25,9 @@
 - [Projen AWS CDK Applications]
 - [Publish CDK Constructs]
 
+[CDK Construct Library]: https://github.com/AymanZahran/projen-cdk-tutorial-part-1
+[CDK App]: https://github.com/AymanZahran/projen-cdk-tutorial-part-2
+[CDK Pipelines App]: https://github.com/AymanZahran/projen-cdk-tutorial-part-3
 [CDK Getting Started]: https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html
 [CDK API Reference]: https://docs.aws.amazon.com/cdk/api/v2/
 [CDK Workshop]: https://cdkworkshop.com/
