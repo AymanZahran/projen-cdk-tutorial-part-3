@@ -222,11 +222,12 @@ README.line('git commit -m "Commit"');
 README.line('git push');
 README.line('```');
 
-README.line('![projen-cdk-tutorial-part-3-build](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-build.png)');
+README.line('![projen-cdk-tutorial-part-3-build](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-build.PNG)');
 README.line();
 
 README.line('6- Deploy CDK Pipelines');
 README.line('```sh');
+README.line('npx cdk bootstrap aws://$AWS_ACCOUNT_NUMBER/$AWS_DEFAULT_REGION');
 README.line('cdk deploy');
 README.line('```');
 
@@ -238,9 +239,9 @@ README.line('git commit -m "Commit"');
 README.line('git push codecommit master');
 README.line('```');
 
-README.line('![projen-cdk-tutorial-part-3-pipeline-1](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-pipeline-1.png)');
+README.line('![projen-cdk-tutorial-part-3-pipeline-1](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-pipeline-1.PNG)');
 README.line();
-README.line('![projen-cdk-tutorial-part-3-pipeline-2](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-pipeline-2.png)');
+README.line('![projen-cdk-tutorial-part-3-pipeline-2](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-pipeline-2.PNG)');
 README.line();
 
 README.line();

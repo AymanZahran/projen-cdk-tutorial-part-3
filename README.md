@@ -48,10 +48,11 @@ git add .
 git commit -m "Commit"
 git push
 ```
-![projen-cdk-tutorial-part-3-build](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-build.png)
+![projen-cdk-tutorial-part-3-build](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-build.PNG)
 
 6- Deploy CDK Pipelines
 ```sh
+npx cdk bootstrap aws://$AWS_ACCOUNT_NUMBER/$AWS_DEFAULT_REGION
 cdk deploy
 ```
 7- Deploy ECS Stack via CDK Pipelines
@@ -61,9 +62,9 @@ git add .
 git commit -m "Commit"
 git push codecommit master
 ```
-![projen-cdk-tutorial-part-3-pipeline-1](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-pipeline-1.png)
+![projen-cdk-tutorial-part-3-pipeline-1](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-pipeline-1.PNG)
 
-![projen-cdk-tutorial-part-3-pipeline-2](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-pipeline-2.png)
+![projen-cdk-tutorial-part-3-pipeline-2](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-pipeline-2.PNG)
 
 
 ## License
