@@ -265,6 +265,9 @@ README.line('- [Projen API Reference]');
 README.line('- [Projen AWS CDK Construct Library]');
 README.line('- [Projen AWS CDK Applications]');
 README.line('- [Publish CDK Constructs]');
+README.line('- [projen-cdk-tutorial-part-1]');
+README.line('- [projen-cdk-tutorial-part-2]');
+README.line('- [projen-cdk-tutorial-part-3]');
 README.line();
 
 README.line('[CDK Construct Library]: https://github.com/AymanZahran/projen-cdk-tutorial-part-3');
@@ -283,5 +286,8 @@ README.line('[Projen API Reference]: https://projen.io/api/API.html');
 README.line('[Projen AWS CDK Construct Library]: https://projen.io/awscdk-construct.html');
 README.line('[Projen AWS CDK Applications]: https://projen.io/awscdk-apps.html');
 README.line('[Publish CDK Constructs]: https://github.com/seeebiii/projen-test');
+README.line('[projen-cdk-tutorial-part-1]: https://github.com/AymanZahran/projen-cdk-tutorial-part-1');
+README.line('[projen-cdk-tutorial-part-2]: https://github.com/AymanZahran/projen-cdk-tutorial-part-2');
+README.line('[projen-cdk-tutorial-part-3]: https://github.com/AymanZahran/projen-cdk-tutorial-part-3');
 
 project.synth();
