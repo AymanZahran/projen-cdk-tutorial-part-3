@@ -191,6 +191,58 @@ README.line('[![build](https://github.com/AymanZahran/projen-cdk-tutorial-part-3
 README.line('## Part 3');
 README.line('![projen-cdk-tutorial-part-3](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3.png)')
 
+README.line('### Steps');
+README.line('1- Add Gitpod Secrets');
+README.line('```sh');
+README.line('AWS_ACCOUNT_NUMBER');
+README.line('AWS_DEFAULT_REGION');
+README.line('AWS_ACCESS_KEY_ID');
+README.line('AWS_SECRET_ACCESS_KEY');
+README.line('```');
+README.line('2- Create Project locally or launch using [Gitpod]');README.line();
+README.line('```sh');
+README.line('mkdir projen-cdk-tutorial-part-3');
+README.line('cd projen-cdk-tutorial-part-3');
+README.line('code .');
+README.line('alias cdk="npx cdk"');
+README.line('awscdk-app-ts');
+README.line('```');
+README.line('3- Configure Project');
+README.line('```sh');
+README.line('Add your code to .projenrc, This is the only file that will be modified. During projen it will scaffold your whole project including what you are reading right now ! :)');
+README.line('```');
+README.line('4- Execute projen');
+README.line('```sh');
+README.line('pj');
+README.line('```');
+README.line('5- Commit & Push');
+README.line('```sh');
+README.line('git add .');
+README.line('git commit -m "Commit"');
+README.line('git push');
+README.line('```');
+
+README.line('![projen-cdk-tutorial-part-3-build](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-build.png)');
+README.line();
+
+README.line('6- Deploy CDK Pipelines');
+README.line('```sh');
+README.line('cdk deploy');
+README.line('```');
+
+README.line('7- Deploy ECS Stack via CDK Pipelines');
+README.line('```sh');
+README.line('git remote add codecommit "<YOUR_CODECOMMIT_REPO>"')
+README.line('git add .');
+README.line('git commit -m "Commit"');
+README.line('git push codecommit master');
+README.line('```');
+
+README.line('![projen-cdk-tutorial-part-3-pipeline-1](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-pipeline-1.png)');
+README.line();
+README.line('![projen-cdk-tutorial-part-3-pipeline-2](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-pipeline-2.png)');
+README.line();
+
 README.line();
 README.line('## License');
 README.line('The [Apache-2.0] license');
@@ -213,6 +265,7 @@ README.line();
 README.line('[CDK Construct Library]: https://github.com/AymanZahran/projen-cdk-tutorial-part-3');
 README.line('[CDK App]: https://github.com/AymanZahran/projen-cdk-tutorial-part-2');
 README.line('[CDK Pipelines App]: https://github.com/AymanZahran/projen-cdk-tutorial-part-3');
+README.line('[Gitpod]: https://gitpod.io/#https://github.com/AymanZahran/projen-cdk-tutorial-part-3');
 README.line('[Apache-2.0]: https://github.com/AymanZahran/projen-cdk-tutorial-part-1/blob/master/LICENSE');
 README.line('[CDK Getting Started]: https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html');
 README.line('[CDK API Reference]: https://docs.aws.amazon.com/cdk/api/v2/');

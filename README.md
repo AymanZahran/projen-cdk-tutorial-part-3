@@ -17,6 +17,54 @@
 [![build](https://github.com/AymanZahran/projen-cdk-tutorial-part-3/actions/workflows/build.yml/badge.svg)](https://github.com/AymanZahran/projen-cdk-tutorial-part-3/actions/workflows/build.yml)
 ## Part 3
 ![projen-cdk-tutorial-part-3](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3.png)
+### Steps
+1- Add Gitpod Secrets
+```sh
+AWS_ACCOUNT_NUMBER
+AWS_DEFAULT_REGION
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+```
+2- Create Project locally or launch using [Gitpod]
+
+```sh
+mkdir projen-cdk-tutorial-part-3
+cd projen-cdk-tutorial-part-3
+code .
+alias cdk="npx cdk"
+awscdk-app-ts
+```
+3- Configure Project
+```sh
+Add your code to .projenrc, This is the only file that will be modified. During projen it will scaffold your whole project including what you are reading right now ! :)
+```
+4- Execute projen
+```sh
+pj
+```
+5- Commit & Push
+```sh
+git add .
+git commit -m "Commit"
+git push
+```
+![projen-cdk-tutorial-part-3-build](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-build.png)
+
+6- Deploy CDK Pipelines
+```sh
+cdk deploy
+```
+7- Deploy ECS Stack via CDK Pipelines
+```sh
+git remote add codecommit "<YOUR_CODECOMMIT_REPO>"
+git add .
+git commit -m "Commit"
+git push codecommit master
+```
+![projen-cdk-tutorial-part-3-pipeline-1](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-pipeline-1.png)
+
+![projen-cdk-tutorial-part-3-pipeline-2](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-pipeline-2.png)
+
 
 ## License
 The [Apache-2.0] license
@@ -37,6 +85,7 @@ The [Apache-2.0] license
 [CDK Construct Library]: https://github.com/AymanZahran/projen-cdk-tutorial-part-3
 [CDK App]: https://github.com/AymanZahran/projen-cdk-tutorial-part-2
 [CDK Pipelines App]: https://github.com/AymanZahran/projen-cdk-tutorial-part-3
+[Gitpod]: https://gitpod.io/#https://github.com/AymanZahran/projen-cdk-tutorial-part-3
 [Apache-2.0]: https://github.com/AymanZahran/projen-cdk-tutorial-part-1/blob/master/LICENSE
 [CDK Getting Started]: https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html
 [CDK API Reference]: https://docs.aws.amazon.com/cdk/api/v2/
