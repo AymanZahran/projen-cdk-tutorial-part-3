@@ -239,6 +239,8 @@ README.line('git commit -m "Commit"');
 README.line('git push codecommit master');
 README.line('```');
 
+README.line('![projen-cdk-tutorial-part-3-pipeline-1](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-stack.PNG)');
+README.line();
 README.line('![projen-cdk-tutorial-part-3-pipeline-1](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-pipeline-1.PNG)');
 README.line();
 README.line('![projen-cdk-tutorial-part-3-pipeline-2](https://projen-cdk-tutorial.s3.amazonaws.com/projen-cdk-tutorial-part-3-pipeline-2.PNG)');
